@@ -29,3 +29,8 @@ app.get('/posts', function (req, res) {
 app.get('/posts/:id', function (req, res) {
     res.send('modifica dei post')
 })
+
+//modify
+app.get('/posts/:id', function (req, res) {
+    res.send('modifica parziale del post')
+})
