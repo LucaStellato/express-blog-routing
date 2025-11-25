@@ -4,12 +4,14 @@ const posts = require('../posts')
 //index
 router.get('/', function (req, res) {
     //res.send('Lista dei post')
-    res.type('json').send(posts);
+    res.json(posts);
 })
 
 //show
 router.get('/:id', function (req, res) {
-    res.send('Dettagli post')
+
+    res.json(posts[req.params.id])
+
 })
 
 //store
