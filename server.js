@@ -21,16 +21,21 @@ app.get('/posts/:id', function (req, res) {
 })
 
 //store
-app.get('/posts', function (req, res) {
+app.post('/posts', function (req, res) {
     res.send('creazione nuovo post')
 })
 
 //update
-app.get('/posts/:id', function (req, res) {
+app.put('/posts/:id', function (req, res) {
     res.send('modifica dei post')
 })
 
 //modify
-app.get('/posts/:id', function (req, res) {
+app.patch('/posts/:id', function (req, res) {
     res.send('modifica parziale del post')
+})
+
+//destroy
+app.delete('/posts/:id', function (req, res) {
+    res.send('eliminazione post')
 })
