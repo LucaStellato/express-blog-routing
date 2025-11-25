@@ -24,3 +24,8 @@ app.get('/posts/:id', function (req, res) {
 app.get('/posts', function (req, res) {
     res.send('creazione nuovo post')
 })
+
+//update
+app.get('/posts/:id', function (req, res) {
+    res.send('modifica dei post')
+})
