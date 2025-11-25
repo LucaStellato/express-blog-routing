@@ -3,7 +3,8 @@ const router = express.Router();
 const posts = require('../posts')
 //index
 router.get('/', function (req, res) {
-    res.send('Lista dei post')
+    //res.send('Lista dei post')
+    res.type('json').send(posts);
 })
 
 //show
