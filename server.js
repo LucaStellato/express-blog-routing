@@ -6,6 +6,7 @@ const postsRouter = require('./routers/posts')
 app.get('/', (req, res) => {
     res.send('post Api')
 })
+app.use("/posts", postsRouter)
 
 app.listen(port, () => {
     console.log(`app listening on port http://localhost:${port}`)
