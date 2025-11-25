@@ -19,3 +19,8 @@ app.get('/posts', function (req, res) {
 app.get('/posts/:id', function (req, res) {
     res.send('Dettagli post')
 })
+
+//store
+app.get('/posts', function (req, res) {
+    res.send('creazione nuovo post')
+})
